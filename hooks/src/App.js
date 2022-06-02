@@ -1,10 +1,13 @@
 import React from 'react';
-import CounterHook from "./01_体验hooks/CounterHook";
+import MultipleState from "./01_useState的使用/MultipleState";
+// import CounterHook from "./01_体验hooks/CounterHook";
+
 
 function App() {
     return (
         <div>
-            <CounterHook/>
+            {/*<CounterHook/>*/}
+            <MultipleState/>
         </div>
     );
 }
