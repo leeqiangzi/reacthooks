@@ -6,6 +6,7 @@ import ChangeTitleForClassHook from "./03_useEffect使用/ChangeTitleForClassHoo
 import DispatchEffectHook from "./03_useEffect使用/DispatchEffectHook";
 import MultiEffectHook from "./03_useEffect使用/MultiEffectHook";
 import UseContextDemo from "./04_useContext/UseContextDemo";
+import UseReducer from "./05_useReducer的使用/UseReducer";
 // import ComplexHookState from "./02_useState的使用/ComplexHookState";
 
 export const UseContext = createContext();
@@ -26,11 +27,14 @@ function App() {
 
             {/*<MultiEffectHook/>*/}
 
-            <UseContext.Provider value={{name: 'qiangzi', age: 18}}>
-                <ThemeContext.Provider value={{fontSize: '30px', color: 'red'}}>
-                    <UseContextDemo/>
-                </ThemeContext.Provider>
-            </UseContext.Provider>
+            {/*<UseContext.Provider value={{name: 'qiangzi', age: 18}}>*/}
+            {/*    <ThemeContext.Provider value={{fontSize: '30px', color: 'red'}}>*/}
+            {/*        <UseContextDemo/>*/}
+            {/*    </ThemeContext.Provider>*/}
+            {/*</UseContext.Provider>*/}
+
+
+            <UseReducer/>
         </div>
     );
 }
