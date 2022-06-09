@@ -7,10 +7,14 @@ import DispatchEffectHook from "./03_useEffect使用/DispatchEffectHook";
 import MultiEffectHook from "./03_useEffect使用/MultiEffectHook";
 import UseContextDemo from "./04_useContext/UseContextDemo";
 import UseReducer from "./05_useReducer的使用/UseReducer";
+import UseCallback01 from "./06_useCallback/UseCallback01";
+import UseCallback02 from "./06_useCallback/UseCallback02";
 // import ComplexHookState from "./02_useState的使用/ComplexHookState";
 
 export const UseContext = createContext();
 export const ThemeContext = createContext();
+
+
 
 function App() {
     const [show, setShow] = useState(true);
@@ -34,7 +38,11 @@ function App() {
             {/*</UseContext.Provider>*/}
 
 
-            <UseReducer/>
+            {/*<UseReducer/>*/}
+
+            {/*<UseCallback01/>*/}
+
+            <UseCallback02/>
         </div>
     );
 }
