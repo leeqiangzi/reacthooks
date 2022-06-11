@@ -9,6 +9,8 @@ import UseContextDemo from "./04_useContext/UseContextDemo";
 import UseReducer from "./05_useReducer的使用/UseReducer";
 import UseCallback01 from "./06_useCallback/UseCallback01";
 import UseCallback02 from "./06_useCallback/UseCallback02";
+import MemoDemo1 from "./07_useMemo使用/01_useMemo复杂计算应用";
+import MemoDemo2 from "./07_useMemo使用/02_useMemo传入子组件应用类型";
 // import ComplexHookState from "./02_useState的使用/ComplexHookState";
 
 export const UseContext = createContext();
@@ -42,7 +44,10 @@ function App() {
 
             {/*<UseCallback01/>*/}
 
-            <UseCallback02/>
+            {/*<UseCallback02/>*/}
+
+            {/*<MemoDemo1/>*/}
+            <MemoDemo2/>
         </div>
     );
 }
