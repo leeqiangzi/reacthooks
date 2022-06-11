@@ -1,5 +1,7 @@
 import React, {useState, createContext} from 'react';
 import UseImperativeHandle from "./09_useImperativeHandle/02_useImperativeHandle用法";
+import UseEffect from "./10_useLayoutEffect/01_useEffect的count修改";
+import UseLayoutEffect from "./10_useLayoutEffect/02_useLayoutEffect的count修改";
 // import MultipleState from "./02_useState的使用/MultipleState";
 // import CounterHook from "./01_体验hooks/CounterHook";
 // import ChangeTitleForClass from "./03_useEffect使用/ChangeTitleForClass";
@@ -55,7 +57,10 @@ function App() {
             {/*<UseRefDom/>*/}
             {/*<UseRefDom2/>*/}
 
-            <UseImperativeHandle/>
+            {/*<UseImperativeHandle/>*/}
+
+            <UseEffect/>
+            <UseLayoutEffect/>
         </div>
     );
 }
