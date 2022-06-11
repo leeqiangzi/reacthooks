@@ -1,20 +1,21 @@
 import React, {useState, createContext} from 'react';
+import UseImperativeHandle from "./09_useImperativeHandle/02_useImperativeHandle用法";
 // import MultipleState from "./02_useState的使用/MultipleState";
-import CounterHook from "./01_体验hooks/CounterHook";
-import ChangeTitleForClass from "./03_useEffect使用/ChangeTitleForClass";
-import ChangeTitleForClassHook from "./03_useEffect使用/ChangeTitleForClassHook";
-import DispatchEffectHook from "./03_useEffect使用/DispatchEffectHook";
-import MultiEffectHook from "./03_useEffect使用/MultiEffectHook";
-import UseContextDemo from "./04_useContext/UseContextDemo";
-import UseReducer from "./05_useReducer的使用/UseReducer";
-import UseCallback01 from "./06_useCallback/UseCallback01";
-import UseCallback02 from "./06_useCallback/UseCallback02";
-import MemoDemo1 from "./07_useMemo使用/01_useMemo复杂计算应用";
-import MemoDemo2 from "./07_useMemo使用/02_useMemo传入子组件应用类型";
-import UseRefDom from "./08_useRef/01_useRefDOM";
-import UseRefDom2 from "./08_useRef/02_useRefDOM引用其他数据";
+// import CounterHook from "./01_体验hooks/CounterHook";
+// import ChangeTitleForClass from "./03_useEffect使用/ChangeTitleForClass";
+// import ChangeTitleForClassHook from "./03_useEffect使用/ChangeTitleForClassHook";
+// import DispatchEffectHook from "./03_useEffect使用/DispatchEffectHook";
+// import MultiEffectHook from "./03_useEffect使用/MultiEffectHook";
+// import UseContextDemo from "./04_useContext/UseContextDemo";
+// import UseReducer from "./05_useReducer的使用/UseReducer";
+// import UseCallback01 from "./06_useCallback/UseCallback01";
+// import UseCallback02 from "./06_useCallback/UseCallback02";
+// import MemoDemo1 from "./07_useMemo使用/01_useMemo复杂计算应用";
+// import MemoDemo2 from "./07_useMemo使用/02_useMemo传入子组件应用类型";
+// import UseRefDom from "./08_useRef/01_useRefDOM";
+// import UseRefDom2 from "./08_useRef/02_useRefDOM引用其他数据";
+// import ForwardRefDemo from "./09_useImperativeHandle/01_回顾forwardRef用法";
 // import ComplexHookState from "./02_useState的使用/ComplexHookState";
-
 
 export const UseContext = createContext();
 export const ThemeContext = createContext();
@@ -52,7 +53,9 @@ function App() {
             {/*<MemoDemo2/>*/}
 
             {/*<UseRefDom/>*/}
-            <UseRefDom2/>
+            {/*<UseRefDom2/>*/}
+
+            <UseImperativeHandle/>
         </div>
     );
 }
