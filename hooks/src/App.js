@@ -11,11 +11,13 @@ import UseCallback01 from "./06_useCallback/UseCallback01";
 import UseCallback02 from "./06_useCallback/UseCallback02";
 import MemoDemo1 from "./07_useMemo使用/01_useMemo复杂计算应用";
 import MemoDemo2 from "./07_useMemo使用/02_useMemo传入子组件应用类型";
+import UseRefDom from "./08_useRef/01_useRefDOM";
+import UseRefDom2 from "./08_useRef/02_useRefDOM引用其他数据";
 // import ComplexHookState from "./02_useState的使用/ComplexHookState";
+
 
 export const UseContext = createContext();
 export const ThemeContext = createContext();
-
 
 
 function App() {
@@ -47,7 +49,10 @@ function App() {
             {/*<UseCallback02/>*/}
 
             {/*<MemoDemo1/>*/}
-            <MemoDemo2/>
+            {/*<MemoDemo2/>*/}
+
+            {/*<UseRefDom/>*/}
+            <UseRefDom2/>
         </div>
     );
 }
