@@ -2,6 +2,10 @@ import React, {useState, createContext} from 'react';
 import UseImperativeHandle from "./09_useImperativeHandle/02_useImperativeHandle用法";
 import UseEffect from "./10_useLayoutEffect/01_useEffect的count修改";
 import UseLayoutEffect from "./10_useLayoutEffect/02_useLayoutEffect的count修改";
+import CustomerLifeHookDemo01 from "./11_自定义Hook/01_认识自定义Hook";
+import CustomerContextShareHook from "./11_自定义Hook/02_自定义hook联系-Context共享";
+import CustomerScrollPositionHook from "./11_自定义Hook/03_自定义hook联系-获取滚动位置";
+import CustomerLocalStorageHook from "./11_自定义Hook/03_自定义hook联系-localStorage";
 // import MultipleState from "./02_useState的使用/MultipleState";
 // import CounterHook from "./01_体验hooks/CounterHook";
 // import ChangeTitleForClass from "./03_useEffect使用/ChangeTitleForClass";
@@ -21,7 +25,7 @@ import UseLayoutEffect from "./10_useLayoutEffect/02_useLayoutEffect的count修�
 
 export const UseContext = createContext();
 export const ThemeContext = createContext();
-
+export const TokenContext = createContext();
 
 function App() {
     const [show, setShow] = useState(true);
@@ -59,8 +63,21 @@ function App() {
 
             {/*<UseImperativeHandle/>*/}
 
-            <UseEffect/>
-            <UseLayoutEffect/>
+            {/*<UseEffect/>*/}
+            {/*<UseLayoutEffect/>*/}
+
+            {/*{show && <CustomerLifeHookDemo01/>}*/}
+            {/*<button onClick={e => setShow(!show)}>切换</button>*/}
+
+            {/*<UseContext.Provider value={{name: 'qiangzi', age: '18'}}>*/}
+            {/*    <TokenContext.Provider value={{token: 'qqq'}}>*/}
+            {/*        <CustomerContextShareHook/>*/}
+            {/*    </TokenContext.Provider>*/}
+            {/*</UseContext.Provider>*/}
+
+
+            {/*<CustomerScrollPositionHook/>*/}
+            <CustomerLocalStorageHook/>
         </div>
     );
 }
