@@ -5,7 +5,7 @@ import UseLayoutEffect from "./10_useLayoutEffect/02_useLayoutEffect的count修�
 import CustomerLifeHookDemo01 from "./11_自定义Hook/01_认识自定义Hook";
 import CustomerContextShareHook from "./11_自定义Hook/02_自定义hook联系-Context共享";
 import CustomerScrollPositionHook from "./11_自定义Hook/03_自定义hook联系-获取滚动位置";
-import CustomerLocalStorageHook from "./11_自定义Hook/03_自定义hook联系-localStorage";
+import CustomerLocalStorageHook from "./11_自定义Hook/04_自定义hook联系-localStorage";
 // import MultipleState from "./02_useState的使用/MultipleState";
 // import CounterHook from "./01_体验hooks/CounterHook";
 // import ChangeTitleForClass from "./03_useEffect使用/ChangeTitleForClass";
